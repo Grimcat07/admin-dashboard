@@ -5,6 +5,9 @@
 :root
 {
   font-family: roboto-light;
+  --blue-background:rgba(12, 125, 177, 0.938);
+  --gray-container:rgb(236, 233, 233);
+
 }
 li
 {
@@ -18,7 +21,6 @@ ul
 {
   display: grid;
   grid-template: 1fr 6fr/250px 4fr;
-  background-color: gray;
 }
 
 .header
@@ -51,8 +53,8 @@ ul
 }
 #search
 {
-  background-color: rgb(173, 159, 159);
-  border: 2px solid gray;
+  background-color: var(--gray-container);
+  border: 2px solid var(--gray-container);
   border-radius: 12px;
   height: 20px;
   align-self: center;
@@ -138,8 +140,8 @@ ul
 }
 .header-r2 .action-buttons ul>li
 {
-  border: 1px solid rgba(11, 123, 175, 0.938);
-  background-color: rgba(7, 116, 167, 0.938);
+  border: 1px solid var(--blue-background);
+  background-color: var(--blue-background);
   border-radius: 24px;
   text-align: center;
   height: 35px;
@@ -192,7 +194,7 @@ ul
 
 .content-container
 {
-  background-color: rgb(236, 233, 233);
+  background-color: var(--gray-container);
   display: grid;
   padding: 40px 20px;
   grid-template:  4fr 2fr / 5fr 30ch;
@@ -214,7 +216,7 @@ ul
 }
 .content-container .project-card
 {
-  border: 2px solid rgb(189, 186, 186);
+  box-shadow: 1.5px 1.5px 1.5px rgb(199, 197, 197);
   border-radius: 10px;
   border-left: 8px solid rgb(230, 230, 15);
   width: 100%;
@@ -269,7 +271,7 @@ ul
   padding: 0 12px;
   border-radius: 10px;
   background-color: white;
-  
+  box-shadow: 1.5px 1.5px 1.5px rgb(199, 197, 197);
 }
 .announcement-card:nth-last-child(1)
 {
